@@ -13,7 +13,7 @@
 
 body {
   /* background: rgb(0, 0, 0); */
-  background-image: url("./img/img-fundo.jpg");
+  background-image: url("./assets/img/img-fundo.jpg");
   background-size: cover;
   z-index: auto;
 }

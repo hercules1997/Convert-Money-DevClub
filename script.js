@@ -69,31 +69,31 @@ const changeCurrency = () => {
 
     if (select.value === "Є Euro europeu") {
         currentName.innerHTML = "Є Euro";
-        currentImg.src = "./img/euro.png";
+        currentImg.src = "./assets/img/euro.png";
     }
 
     if (select.value === "US$ Dólar americano") {
         currentName.innerHTML = "Dólar americano";
-        currentImg.src = "./img/eua.png";
+        currentImg.src = "./assets/img/eua.png";
     }
 
     if (select.value === "฿ Bitcoin") {
         currentName.innerHTML = "฿ Bitcoin";
-        currentImg.src = "./img/bitcoin.png";
+        currentImg.src = "./assets/img/bitcoin.png";
     }
 
     if (select.value === "Cardano") {
         currentName.innerHTML = "Cardano";
-        currentImg.src = "./img/cad.png";
+        currentImg.src = "./assets/img/cad.png";
     }
 
     if (select.value === "$ Peso Colombiano") {
         currentName.innerHTML = "$ Peso Colombiano";
-        currentImg.src = "./img/colombia.png";
+        currentImg.src = "./assets/img/colombia.png";
     }
     if (select.value === "CLP$ Peso Chileno") {
         currentName.innerHTML = "CLP$ Peso Chileno";
-        currentImg.src = "./img/chile.png";
+        currentImg.src = "./assets/img/chile.png";
     }
     convertValues();
 };
