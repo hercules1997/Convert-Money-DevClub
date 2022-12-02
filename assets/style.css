@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;500;600&family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;700&family=Sono:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+  font-style: normal;
+  font-size: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+body {
+  /* background: rgb(0, 0, 0); */
+  background-image: url("./img/img-fundo.jpg");
+  background-size: cover;
+  z-index: auto;
+}
+
+.container {
+  width: 400px;
+  background-color: rgb(36, 36, 36);
+  margin: 0 auto;
+  margin-top: 68px;
+  margin-bottom: 68px;
+  border-radius: 15px;
+  box-shadow: 0px 1px 12px rgba(3, 3, 3, 0.549);
+}
+
+h1 {
+  font-size: normal;
+  font-size: 28px;
+  display: flex;
+  color: rgb(147, 145, 145);
+  justify-content: center;
+  padding: 25px;
+}
+
+main {
+  padding: 24px;
+}
+
+label {
+  font-size: 18px;
+  color: rgb(126, 126, 126);
+}
+
+select {
+  background: rgb(49, 49, 49);
+  border: 1px solid rgb(61, 61, 61);
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  padding: 12px;
+  box-shadow: 0px 1px 10px rgb(0, 0, 0);
+  margin-top: 6px;
+  margin-bottom: 30px;
+  overflow: auto;
+  color: aliceblue;
+  appearance: none;
+}
+
+option:checked {
+  background: rgb(140, 140, 140);
+}
+
+input {
+  background: rgb(49, 49, 49);
+  border: 1px solid rgb(61, 61, 61);
+  border-radius: 12px;
+  height: 48px;
+  display: block;
+  width: 100%;
+  outline: none;
+  padding-left: 16px;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+button {
+  background-color: rgb(71, 71, 71);
+  color: rgb(167, 167, 167);
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 24px;
+  margin-bottom: 36px;
+  padding: 25px;
+}
+
+button:hover {
+  opacity: 0.8;
+  box-shadow: 0px 1px 10px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+section {
+  border: 1px solid gray;
+  text-align: center;
+
+  border-radius: 4px;
+}
+
+.currency-container {
+  text-align: center;
+  padding: 10px;
+  color: rgb(160, 160, 160);
+}
+
+.currency-value {
+  color: rgb(171, 174, 1);
+  font-size: 20px;
+  font-weight: bold;
+}
