@@ -1,22 +1,27 @@
 const button = document.getElementById("btn");
 const select = document.getElementById("current-select");
 
-const dolar = 5.19;
-const euro = 5.46;
-const bitcoin = 0.000011;
+
+
 const cardano = 1.66;
 const pesoChileno = 169.3;
 const pesoColombiano = 913.7;
 
 //**CONVERSÃO DOS VALORES */
-const convertValues = () => {
+const convertValues = async () => {
     const input = document.getElementById("input-real").value;
     const realValueText = document.getElementById("real-value-text");
     const currencyValueText = document.getElementById("currency-value-text");
+    const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then(response => response.json())
+
+    const dolar = data.USDBRL.high
+    const euro = data.EURBRL.high
+    const bitcoin = data.BTCBRL.high
 
     realValueText.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
         currency: "BRL",
+        minimumFractionDigits: 8
     }).format(input);
 
     if (select.value === "US$ Dólar americano") {
@@ -37,7 +42,8 @@ const convertValues = () => {
         currencyValueText.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "BTC",
-        }).format(bitcoin * input);
+            minimumFractionDigits: 6
+        }).format(input / (1000 * bitcoin));
     }
 
     if (select.value === "Cardano") {
