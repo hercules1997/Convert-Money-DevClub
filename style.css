@@ -130,7 +130,7 @@ section {
 }
 
 @media  screen and (max-width: 650px) {
-  body {
-    padding: 0px 15px;
+  .container {
+    margin: 0px 25px;
   }
 }

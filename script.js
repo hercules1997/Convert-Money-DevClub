@@ -21,7 +21,6 @@ const convertValues = async () => {
     realValueText.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
         currency: "BRL",
-        minimumFractionDigits: 8
     }).format(input);
 
     if (select.value === "US$ Dólar americano") {
